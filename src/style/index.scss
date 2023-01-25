@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$color-red: #D20A32;
+$color-white: #FFFFFF;
+$color-black: #191919;
+
+
+body {
+  background-color: $color-black;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: $color-white;
+}
+
+#namegame {
+  color: $color-white;
+}
+
+h1 a {
+  font-weight: 7000;
+  color: $color-red !important;
+}
+
+@mixin whitecolor {
+  color: $color-white;
+}
+
+h2 {
+  @include whitecolor;
+  font-weight: 600;
+}
+
+p,
+h5 {
+  @include whitecolor;
+  font-weight: 500;
+  vertical-align: center;
+}
+
+input {
+  background-color: transparent;
+  color: $color-white;
+  border: none;
+  width: fit-content;
+  display: block;
+}
+
+input:focus {
+  outline: none;
+}
+ 
+.articles {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.cardGame{
+  padding-bottom: 10px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  } 
+
+  p {
+    display: flex;
+    justify-content: flex-start;
+    gap : 10px;
+  }
+
+  a {
+    color: $color-white;
+    font-size: 24px;
+    text-decoration: none;
+    
+  }
+  
+}
+
+
+
+.cardheader {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container form {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.container button {
+  background: transparent;
+  border: none;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  background-color: $color-black;
+  padding: 8px 25px;
+  border-radius: 20.5px;
+  border: 1px solid $color-white;
+  max-width: max-content;
+  height: 20px;
+  
+}
+
+#searchbtn {
+  color:$color-white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.imgbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b1d1d;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease; 
+  opacity: 0.95;
+  
+  p {
+    color: #fff;
+    font-size: 100%;
+    font-family: poppins;
+    font-weight: bold;
+
+  }
+  
+}
+
+.cardGame:hover .imgbox {
+  height: 100%;
+}
+
+.header {
+position: relative;
+
+  img {
+
+    box-sizing:content-box;
+    position: relative;
+    left: -40px;
+    right: -20px;
+    width: calc(100% + 80px);
+    height: 40%;
+  }
+}
+
+.background{
+  position : relative
+}
+
+#website{
+  position:absolute;
+  right: 20px;
+  bottom : 20px;
+  display: inline-block;
+  background-color:$color-red;
+  color: $color-white;
+  padding:10px 25px;
+  border: none;
+}
+
+
+.trheader {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+  h1{
+  font-size: 40px;
+  color: $color-white;
+  }
+
+  p{
+  color: $color-red;
+  font-size: 20px;
+  }
+}
+
+.rdpp {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 3%;
+}
+
+.genretags {
+  display: flex;
+  justify-content: space-between;
+  gap : 40%;
+}
+
+h2 {
+  color:$color-red;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.stores {
+  a {
+  color: $color-white;
+  text-decoration-color: $color-red;
+  }
+}
+
+#screenshot {
+display: row;
+align-items: center;
+
+}
+
+#gridscreen {
+  
+  width:45%;
+  height:45%;
+  
+  display:grid;
+  grid-template-columns: 110% 110%;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+
+  img {
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    
+  }
+}
+
+.redbox {
+  position: absolute;
+  width: 139px;
+  height: 10px;
+  left: 50px;
+  top: 1566px;
+
+  background: #D20A32;
+}
+
+#footer {
+  position: absolute;
+  width: 405px;
+  height: 19px;
+  left: 50px;
+  top: 1599px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+
+.gamemore {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#show-more {
+  background: $color-red;
+  width: 223px;
+  height: 51px;
+  font-size: 24px;
+  color: $color-white;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  border: none;
+}
+
+#select {
+  background: $color-red;
+  width: 249px;
+  height: 44px;
+  font-size: 24px;
+  color: $color-white;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  border: none;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
