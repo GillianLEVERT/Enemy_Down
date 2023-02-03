@@ -1,6 +1,7 @@
-pnpm install </br>
-pnpm run dev </br>
-pnpm alt f4 </br>
-pnpm touche windows </br>
-pnpm éteindre l'ordi </br>
-pnpm aller se coucher </br>
+Projet avec une API de jeux vidéos, c'est le netflix du jeux-video version THP
+Bundler Vite JS
+
+`git clone`
+`pnpm install`
+`pnpm run dev`
+
